@@ -37,7 +37,7 @@
     <!-- Main Contents Starts -->
     <main class="bg-[#F8F8F8]">
         <!-- Full Main Part Container -->
-        <div class="main-container grid grid-cols-4 lg:flex-row gap-4 mx-[50px] lg:mx-[180px]">
+        <div class="main-container flex flex-col lg:flex-row gap-4 mx-[50px] lg:mx-[180px]">
             <!-- Shopping Item Container -->
             <div class="category-container">
                 <!-- 1st category -->
@@ -45,7 +45,7 @@
                     <h1 class="text-4 font-semibold">Kitchenwear</h1>
                     <div class="category-cards-container flex flex-col lg:flex-row gap-4">
                         <!-- 1st Card -->
-                        <div class=" bg-white flex-1">
+                        <div onclick="clickHandler(this)" class=" bg-white flex-1">
                             <!-- Image Container -->
                             <div class="p-5 text-center">
                                 <div class="bg-[#F8F8F8] flex justify-center">
@@ -60,7 +60,7 @@
                                     <img src="./images/Star-empty.png" alt="">
                                 </div>
                                 <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
+                                <p class="text-xl font-normal"><span id="priceValue">39.00</span> TK</p>
                             </div>
 
                         </div>
