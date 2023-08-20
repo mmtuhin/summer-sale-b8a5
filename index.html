@@ -37,31 +37,63 @@
     <!-- Main Contents Starts -->
     <main class="bg-[#F8F8F8] px-10">
        <div class="full-grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="col-span-1 order-1 md:col-span-2 lg:col-span-4">
+        <!-- Category Title -->
+        <div class="col-span-1 order-1 md:col-span-2 lg:col-span-4 text-2xl font-semibold">
             <h1>Kitchenware</h1>
         </div>
         <div class="col-span-1 order-2 lg:col-span-3 flex flex-col lg:flex-row gap-4 ">
             <!-- 1st Card -->
-            <div class="bg-white flex-1">
-                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center ">
+            <div class="bg-white flex-1 text-center">
+                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center ">
                     <img class="h-36" src="./images/prod1.png" alt="">
                 </div>
+                <div class="ratings flex justify-center">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-empty.png" alt="">
+                    <img src="./images/Star-empty.png" alt="">
+                    <img src="./images/Star-empty.png" alt="">
+
+                </div>
+                <h1>Spoon</h1>
+                <p>39.00 TK</p>
             </div>
             <!-- 2nd card -->
-            <div class="bg-white flex-1">
-                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center">
+            <div class="bg-white flex-1 text-center">
+                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center ">
                     <img class="h-36" src="./images/prod2.png" alt="">
                 </div>
+                <div class="ratings flex justify-center">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+
+                </div>
+                <h1>Spoon</h1>
+                <p>39.00 TK</p>
             </div>
             <!-- 3rd card -->
-            <div class="bg-white flex-1">
-                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center">
+            <div class="bg-white flex-1 text-center">
+                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center ">
                     <img class="h-36" src="./images/prod3.png" alt="">
                 </div>
+                <div class="ratings flex justify-center">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-fill.png" alt="">
+                    <img src="./images/Star-empty.png" alt="">
+                    <img src="./images/Star-empty.png" alt="">
+
+                </div>
+                <h1>Spoon</h1>
+                <p>39.00 TK</p>
             </div>
         </div>
         <!-- Price Calculation_coupon Section -->
-        <div class="col-span-1 order-last md:order-3 md:col-start-2 lg:col-start-4 md:row-span-3 sticky top-0">
+        <!-- Without Self-start Sticky will not work -->
+        <div class="col-span-1 order-last md:order-3 md:col-start-2 lg:col-start-4 md:sticky top-4 flex self-start">
             <div class="coupon-container bg-white">
                 <h1>Have coupon?</h1>
                 <div class="flex items-center">
