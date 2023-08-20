@@ -18,7 +18,7 @@
     <header class="bg-[#F9F6E2]">
         <!-- Baanner Section -->
         <section
-            class="banner-container flex flex-col justify-center items-center md:flex-row mx-[50px] lg:mx-[180px] ">
+            class="banner-container flex flex-col-reverse justify-center items-center md:flex-row mx-4 md:mx-[50px] lg:mx-[180px] ">
             <div class="banner-description flex-1 text-center">
                 <h3 class="text-xl lg:text-2xl font-medium mt-4">---SALE FEVER---</h3>
                 <h1 class="text-2xl lg:text-4xl font-bold mt-4 lg:mt-8">Purchase TK 200 or</h1>
@@ -35,175 +35,49 @@
         </section>
     </header>
     <!-- Main Contents Starts -->
-    <main class="bg-[#F8F8F8]">
-        <!-- Full Main Part Container -->
-        <div class="main-container flex flex-col lg:flex-row gap-4 mx-[50px] lg:mx-[180px]">
-            <!-- Shopping Item Container -->
-            <div class="category-container">
-                <!-- 1st category -->
-                <div class="Kitchenwear-container">
-                    <h1 class="text-4 font-semibold">Kitchenwear</h1>
-                    <div class="category-cards-container flex flex-col lg:flex-row gap-4">
-                        <!-- 1st Card -->
-                        <div onclick="clickHandler(this)" class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod1.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal"><span id="priceValue">39.00</span> TK</p>
-                            </div>
-
-                        </div>
-                        <!-- 2nd Card -->
-                        <div class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod2.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
-                            </div>
-
-                        </div>
-                        <!-- 3rd card -->
-                        <div class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod3.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
+    <main class="bg-[#F8F8F8] px-10">
+       <div class="full-grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="col-span-1 order-1 md:col-span-2 lg:col-span-4">
+            <h1>Kitchenware</h1>
+        </div>
+        <div class="col-span-1 order-2 lg:col-span-3 flex flex-col lg:flex-row gap-4 ">
+            <!-- 1st Card -->
+            <div class="bg-white flex-1">
+                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center ">
+                    <img class="h-36" src="./images/prod1.png" alt="">
                 </div>
-                <div class="Kitchenwear-container">
-                    <h1 class="text-4 font-semibold">Kitchenwear</h1>
-                    <div class="category-cards-container flex flex-col lg:flex-row gap-4">
-                        <!-- 1st Card -->
-                        <div class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod4.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
-                            </div>
-
-                        </div>
-                        <!-- 2nd Card -->
-                        <div class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod5.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
-                            </div>
-
-                        </div>
-                        <!-- 3rd card -->
-                        <div class=" bg-white flex-1">
-                            <!-- Image Container -->
-                            <div class="p-5 text-center">
-                                <div class="bg-[#F8F8F8] flex justify-center">
-                                    <img class="px-12 py-8" src="./images/prod6.png" alt="">
-                                </div>
-                                <!-- Ratings -->
-                                <div class="flex justify-center">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-fill.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                    <img src="./images/Star-empty.png" alt="">
-                                </div>
-                                <h3 class="text-xl font-semibold">K. Accessories</h3>
-                                <p class="text-xl font-normal">39.00 TK</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
             </div>
-            <!-- Cart title and Calculation Container -->
-            <div class="cart-container">
-                <!-- Coupon Apply Part -->
-                <div class="coupon-apply bg-white p-6">
-                    <p class="text-xl font-medium">Have coupon?</p>
-                    <div class="flex flex-col md:flex-row gap-4 md:gap-0">
-                        <input class="p-1 md:p-3 text-base md:text-xl border border-neutral-200 rounded-lg md:rounded-l-lg" type="text" placeholder="Coupon code">
-                        <button class="md:p-3 bg-[#E527B2] text-xl font-semibold rounded-lg md:rounded-r-lg text-white py-1 px-1 md:py-4 md:px-5">Apply</button>
-                    </div>
+            <!-- 2nd card -->
+            <div class="bg-white flex-1">
+                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center">
+                    <img class="h-36" src="./images/prod2.png" alt="">
                 </div>
-                <!-- Toatl Calculation Shown -->
-                <div class="bg-white">
-                    <div class="added-items"></div>
-                    <hr>
-                    <div>
-                        <div class="price-part">
-                            <p>Total Price: <span>00.00</span>TK</p>
-                            <p>Discount <span>00.00</span>TK</p>
-                            <p>Total <span>00.00</span>TK</p>
-                        </div>
-                        <button class="bg-[#E527B2]  text-white">Make Purchase</button>
-                    </div>
-                    
+            </div>
+            <!-- 3rd card -->
+            <div class="bg-white flex-1">
+                <div class="bg-slate-500 m-4 px-4 py-7 flex justify-center">
+                    <img class="h-36" src="./images/prod3.png" alt="">
                 </div>
-
             </div>
         </div>
+        <!-- Price Calculation_coupon Section -->
+        <div class="col-span-1 order-last md:order-3 md:col-start-2 lg:col-start-4 md:row-span-3 sticky top-0">
+            <div class="coupon-container bg-white">
+                <h1>Have coupon?</h1>
+                <div class="flex items-center">
+                    
+                </div>
+                  
+
+            </div>
+
+        </div>
+        <div class="order-4">
+            <h1>Sportswear</h1>
+        </div>
+    
+
+       </div>
     </main>
     <footer>
 
