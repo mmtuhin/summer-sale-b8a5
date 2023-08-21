@@ -6,11 +6,13 @@ const payableAmountElement = document.getElementById("payable-amount")
 function clickHandler(targetedItem){
     // For displaying Items
     //console.log(targetedItem.childNodes[5].innerText)
+    
     const cartItem = document.getElementById('cart-items')
     const itemName = targetedItem.childNodes[5].innerText
-    const li = document.createElement('li')
-    li.innerText = itemName
-    cartItem.appendChild(li)
+    const p = document.createElement('p')
+    let count = cartItem.childElementCount;
+    p.innerHTML = `<div class="text-lg font-semibold"> ${count+1}. ${itemName} </div>`
+    cartItem.appendChild(p)
     // For total Calculation
     const itemPrice = targetedItem.childNodes[7].innerText.split(" ")[0]
     total = total + parseFloat(itemPrice)
