@@ -100,8 +100,8 @@
                     <h1 class="text-lg font-semibold mb-3">Have coupon?</h1>
                     <div class="flex items-center ml-0 mr-0">
                         <!-- Input button w-full makes horizontally responsive -->
-                        <input class="px-4 py-3 border rounded-l-lg w-full" type="text" placeholder="Coupon code">
-                        <button
+                        <input id="input-coupon" class="px-4 py-3 border rounded-l-lg w-full" type="text" placeholder="Coupon code">
+                        <button id="btn-coupon"
                             class="font-semibold px-4 py-3 bg-[#E527B2] text-white rounded-r-lg disabled:bg-gray-300 disabled:text-gray-600"
                             disabled="disabled">Apply</button>
                     </div>
@@ -123,7 +123,24 @@
                     <!--Checkout Button -->
                     <button id="btn-purchase"
                         class="w-10/12 font-semibold py-3 bg-[#E527B2] text-white rounded-lg disabled:bg-gray-300 disabled:text-gray-600 absolute -bottom-6 left-1/2 transform -translate-x-1/2"
-                        disabled="disabled">Make Purchase</button>
+                        disabled="disabled" onclick="my_modal_5.showModal()">Make Purchase</button>
+                        <!-- Modal Copy -->
+                        <!-- Open the modal using ID.showModal() method -->
+                        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <form method="dialog" class="modal-box flex flex-col justify-center">
+                            <div class="flex justify-center">
+                                <img src="./images/congo.png" alt="">
+                            </div>
+                            
+                            <h3 class="font-bold text-lg text-center">Congratulations!</h3>
+                            <p class="py-4 text-center text-gray-500">For puchasing the product!</p>
+                            <div class="modal-action flex justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button id="btn-goHome" class="w-3/6 font-semibold py-3 bg-[#E527B2] text-white rounded-lg">Go Home</button>
+                            </div>
+                        </form>
+                        </dialog>
                 </div>
 
             </div>
