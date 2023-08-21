@@ -36,95 +36,103 @@
     </header>
     <!-- Main Contents Starts -->
     <main class="bg-[#F8F8F8] px-10">
-       <div class="full-grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- Category Title -->
-        <div class="col-span-1 order-1 md:col-span-2 lg:col-span-4 text-2xl font-semibold">
-            <h1>Kitchenware</h1>
+        <div class="full-grid-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- Category Title -->
+            <div class="col-span-1 order-1 md:col-span-2 lg:col-span-4 text-2xl font-semibold">
+                <h1>Kitchenware</h1>
+            </div>
+            <div class="col-span-1 order-2 lg:col-span-3 flex flex-col lg:flex-row gap-4 ">
+                <!-- 1st Card -->
+                <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
+                    <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
+                        <img class="h-36" src="./images/prod1.png" alt="">
+                    </div>
+                    <div class="ratings flex justify-center">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-empty.png" alt="">
+                        <img src="./images/Star-empty.png" alt="">
+                        <img src="./images/Star-empty.png" alt="">
+
+                    </div>
+                    <h1 class="text-lg font-semibold">Spoon</h1>
+                    <p class="text-gray-900/50">39.00 TK</p>
+                </div>
+                <!-- 2nd card -->
+                <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
+                    <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
+                        <img class="h-36" src="./images/prod2.png" alt="">
+                    </div>
+                    <div class="ratings flex justify-center">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+
+                    </div>
+                    <h1 class="text-lg font-semibold">Chopping Board</h1>
+                    <p class="text-gray-900/50">39.00 TK</p>
+                </div>
+                <!-- 3rd card -->
+                <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
+                    <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
+                        <img class="h-36" src="./images/prod3.png" alt="">
+                    </div>
+                    <div class="ratings flex justify-center">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-fill.png" alt="">
+                        <img src="./images/Star-empty.png" alt="">
+                        <img src="./images/Star-empty.png" alt="">
+
+                    </div>
+                    <h1 class="text-lg font-semibold">Home Cooker</h1>
+                    <p class="text-gray-900/50">39.00 TK</p>
+                </div>
+            </div>
+            <!-- Price Calculation_coupon Section -->
+            <!-- Without Self-start Sticky will not work -->
+            <div
+                class="col-span-1 row-span-3 order-last md:order-3 md:col-start-2 lg:col-start-4 md:sticky md:top-4 flex flex-col self-start">
+                <!-- Coupon Apply Section -->
+                <div class="coupon-container w-[100%] px-3 py-6 bg-white rounded-lg">
+                    <h1 class="text-lg font-semibold mb-3">Have coupon?</h1>
+                    <div class="flex items-center ml-0 mr-0">
+                        <!-- Input button w-full makes horizontally responsive -->
+                        <input class="px-4 py-3 border rounded-l-lg w-full" type="text" placeholder="Coupon code">
+                        <button
+                            class="font-semibold px-4 py-3 bg-[#E527B2] text-white rounded-r-lg disabled:bg-gray-300 disabled:text-gray-600"
+                            disabled="disabled">Apply</button>
+                    </div>
+                </div>
+                <!-- added items display and total with discount -->
+                <div class="calculation-container w-[100%] px-3 py-6 bg-white rounded-lg mt-4 relative">
+                    <div class="min-h-12">
+                        <ul id="cart-items">
+
+                        </ul>
+                    </div>
+                    <hr class="my-4">
+                    <div class="text-lg font-semibold">
+                        <p>Total Price: <span class="text-gray-500"><span id="price-total">00.00</span> TK</span></p>
+                        <p>Discount: <span class="text-gray-500"><span id="discount-amount">00.00</span> TK</span></p>
+                        <p>Total: <span class="text-gray-500"><span id="payable-amount">00.00</span> TK</span></p>
+                    </div>
+                    <hr class="my-4">
+                    <!--Checkout Button -->
+                    <button id="btn-purchase"
+                        class="w-10/12 font-semibold py-3 bg-[#E527B2] text-white rounded-lg disabled:bg-gray-300 disabled:text-gray-600 absolute -bottom-6 left-1/2 transform -translate-x-1/2"
+                        disabled="disabled">Make Purchase</button>
+                </div>
+
+            </div>
+            <div class="order-4">
+                <h1>Sportswear</h1>
+            </div>
+
+
         </div>
-        <div class="col-span-1 order-2 lg:col-span-3 flex flex-col lg:flex-row gap-4 ">
-            <!-- 1st Card -->
-            <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
-                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
-                    <img class="h-36" src="./images/prod1.png" alt="">
-                </div>
-                <div class="ratings flex justify-center">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-empty.png" alt="">
-                    <img src="./images/Star-empty.png" alt="">
-                    <img src="./images/Star-empty.png" alt="">
-
-                </div>
-                <h1 class="text-lg font-semibold">Spoon</h1>
-                <p class="text-gray-900/50">39.00 TK</p>
-            </div>
-            <!-- 2nd card -->
-            <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
-                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
-                    <img class="h-36" src="./images/prod2.png" alt="">
-                </div>
-                <div class="ratings flex justify-center">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-
-                </div>
-                <h1 class="text-lg font-semibold">Chopping Board</h1>
-                <p class="text-gray-900/50">39.00 TK</p>
-            </div>
-            <!-- 3rd card -->
-            <div onclick="clickHandler(this)" class="bg-white flex-1 text-center rounded-lg">
-                <div class="bg-[#F8F8F8] m-4 px-4 py-7 flex justify-center rounded-lg">
-                    <img class="h-36" src="./images/prod3.png" alt="">
-                </div>
-                <div class="ratings flex justify-center">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-fill.png" alt="">
-                    <img src="./images/Star-empty.png" alt="">
-                    <img src="./images/Star-empty.png" alt="">
-
-                </div>
-                <h1 class="text-lg font-semibold">Home Cooker</h1>
-                <p class="text-gray-900/50">39.00 TK</p>
-            </div>
-        </div>
-        <!-- Price Calculation_coupon Section -->
-        <!-- Without Self-start Sticky will not work -->
-        <div class="col-span-1 row-span-3 order-last md:order-3 md:col-start-2 lg:col-start-4 md:sticky md:top-4 flex flex-col self-start">
-            <!-- Coupon Apply Section -->
-            <div class="coupon-container w-[100%] px-3 py-6 bg-white rounded-lg">
-                <h1 class="text-lg font-semibold mb-3">Have coupon?</h1>
-                <div class="flex items-center ml-0 mr-0">
-                    <!-- Input button w-full makes horizontally responsive -->
-                    <input class="px-4 py-3 border rounded-l-lg w-full" type="text" placeholder="Coupon code">
-                    <button class="font-semibold px-4 py-3 bg-[#E527B2] text-white rounded-r-lg disabled:bg-gray-300 disabled:text-gray-600"  disabled="disabled" >Apply</button>
-                </div>
-            </div>
-            <!-- added items display and total with discount -->
-            <div class="calculation-container w-[100%] px-3 py-6 bg-white rounded-lg mt-4">
-                <div>
-                    <ul id="cart-items">
-
-                    </ul>
-                </div>
-                <hr>
-                <div class="text-lg font-semibold">
-                    <p>Total Price: <span class="text-gray-500">220.00 TK</span></p>
-                    <p>Discount: <span class="text-gray-500">19.00 TK</span></p>
-                    <p>Total: <span class="text-gray-500">201.00 TK</span></p>
-                </div>
-            </div>
-
-        </div>
-        <div class="order-4">
-            <h1>Sportswear</h1>
-        </div>
-    
-
-       </div>
     </main>
     <footer>
 
